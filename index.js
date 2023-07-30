@@ -6,11 +6,11 @@ const BookingRouter = require('./Controllers/bookingcontroller')
 const mongoose = require('mongoose')
 const URL = 'mongodb+srv://Badhrirajan:Badhri2211@cluster0.gxfd2vs.mongodb.net/HallBooking';
 
-const Port = 4000
+const PORT = 4000
 
 app.listen(Port, '0.0.0.0', (err) => {
     if(err) throw err
-    console.log(`SERVER STARTED IN THE PORT ${Port}`)
+    console.log(`SERVER STARTED IN THE PORT ${PORT}`)
 })
 
 async function Connect(){
