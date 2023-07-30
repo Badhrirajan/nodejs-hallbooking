@@ -8,8 +8,9 @@ const URL = 'mongodb+srv://Badhrirajan:Badhri2211@cluster0.gxfd2vs.mongodb.net/H
 
 const Port = 4000
 
-app.listen(Port, 'localhost', () => {
-    console.log("SERVER STARTED IN THE PORT",Port)
+app.listen(Port, '0.0.0.0', (err) => {
+    if(err) throw err
+    console.log(`SERVER STARTED IN THE PORT ${Port}`)
 })
 
 async function Connect(){
